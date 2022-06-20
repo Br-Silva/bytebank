@@ -30,6 +30,26 @@ fun main() {
         println("falha na autenticação")
     }
 
+    val alex = Diretor(
+        nome = "Alex",
+        cpf = "111.111.111-11",
+        salario = 4000.0,
+        senha = 4000,
+        plr = 2000.0
+    )
+
+    println("nome: ${alex.nome}")
+    println("cpf: ${alex.cpf}")
+    println("salário: ${alex.salario}")
+    println("bonificação: ${alex.bonificacao()}")
+    println("plr ${alex.plr}")
+
+    if(alex.autentica(4000)){
+        println("autenticou com sucesso")
+    } else {
+        println("falha na autenticação")
+    }
+
 }
 
 
