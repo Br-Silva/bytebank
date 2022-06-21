@@ -1,6 +1,5 @@
 fun testaFuncionarios() {
-
-    val bruno = Funcionario(
+    val bruno = Auxiliar(
         nome = "Bruno",
         cpf = "123.456.789-10",
         salario = 1000.0
@@ -9,7 +8,7 @@ fun testaFuncionarios() {
     println("nome: ${bruno.nome}")
     println("cpf: ${bruno.cpf}")
     println("salário: ${bruno.salario}")
-    println("bonificação: ${bruno.bonificacao()}")
+    println("bonificação: ${bruno.bonificacao}")
 
     val nanna = Gerente(
         nome = "Nanna",
@@ -21,7 +20,7 @@ fun testaFuncionarios() {
     println("nome: ${nanna.nome}")
     println("cpf: ${nanna.cpf}")
     println("salário: ${nanna.salario}")
-    println("bonificação: ${nanna.bonificacao()}")
+    println("bonificação: ${nanna.bonificacao}")
 
     if (nanna.autentica(1234)) {
         println("autenticou com sucesso")
@@ -40,7 +39,7 @@ fun testaFuncionarios() {
     println("nome: ${alex.nome}")
     println("cpf: ${alex.cpf}")
     println("salário: ${alex.salario}")
-    println("bonificação: ${alex.bonificacao()}")
+    println("bonificação: ${alex.bonificacao}")
     println("plr ${alex.plr}")
 
     if (alex.autentica(4000)) {
@@ -58,7 +57,7 @@ fun testaFuncionarios() {
     println("nome: ${maria.nome}")
     println("cpf: ${maria.cpf}")
     println("salário: ${maria.salario}")
-    println("bonificação: ${maria.bonificacao()}")
+    println("bonificação: ${maria.bonificacao}")
 
 
     val calculadora = CalculadoraBonificacao()
