@@ -1,3 +1,5 @@
+import br.com.alura.bytebank.modelo.*
+
 fun testaFuncionarios() {
     val bruno = Auxiliar(
         nome = "Bruno",

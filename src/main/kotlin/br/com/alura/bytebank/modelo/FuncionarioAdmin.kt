@@ -1,3 +1,8 @@
+package br.com.alura.bytebank.modelo
+
+import br.com.alura.bytebank.modelo.Autenticavel
+import br.com.alura.bytebank.modelo.Funcionario
+
 abstract class FuncionarioAdmin (
     nome: String,
     cpf: String,

@@ -1,4 +1,6 @@
-class Auxiliar (
+package br.com.alura.bytebank.modelo
+
+class Analista (
     nome: String,
     cpf: String,
     salario: Double,
@@ -7,7 +9,10 @@ class Auxiliar (
     cpf = cpf,
     salario = salario
 ) {
+
     override val bonificacao: Double
-        get() = salario * 0.05
+        get() {
+            return salario * 0.1
+    }
 
 }
