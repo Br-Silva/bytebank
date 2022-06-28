@@ -1,34 +1,30 @@
+import br.com.alura.bytebank.exception.SaldoInsuficienteException
 import br.com.alura.bytebank.modelo.Endereco
 
 fun main() {
-    val endereco = Endereco(
-        logradouro = "Rua vergueiro",
-        complemento = "Alura",
-        cep = "00000-000",
-    )
 
-    val enderecoNovo = Endereco(
-        numero = 1000,
-        bairro = "Vila Mariana",
-        cep = "00000-000",
-    )
+    testaContasDiferentes()
 
-    println(endereco.equals(enderecoNovo))
-
-
+    println("início main")
+    funcao1()
+    println("fim main")
+}
+fun funcao1(){
+    println("início funcao1")
+    funcao2()
+    println("fim funcao1")
 }
 
-fun imprime(valor: Any) : Any{
-    println(valor)
-    return valor
+fun funcao2() {
+    println("início funcao2")
+    for (i in 1..5){
+        println(i)
+        try {
+            throw SaldoInsuficienteException()
+        } catch (e: SaldoInsuficienteException){
+            println("SaldoInsuficienteException foi pegada")
+        }
+    }
+    println("fim funcao2")
 }
-
-
-
-
-
-
-
-
-
 
