@@ -61,6 +61,9 @@ fun testaComportamentosConta() {
         println("Falha na transferência")
         println("Falha na autenticação")
         e.printStackTrace()
+    } catch (e: Exception){
+        println("Erro desconhecido")
+        e.printStackTrace()
     }
 
     println(contaBruno.saldo)
